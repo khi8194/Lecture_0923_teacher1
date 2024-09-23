@@ -67,6 +67,31 @@ main {
       }
     }
   }
+
+  &.morning {
+    background-image: url(../img/bg_morning.jpg);
+    figure {
+      background-image: url(../img/phone_morning.png);
+    }
+  }
+  &.afternoon {
+    background-image: url(../img/bg_afternoon.jpg);
+    figure {
+      background-image: url(../img/phone_afternoon.png);
+    }
+  }
+  &.evening {
+    background-image: url(../img/bg_evening.jpg);
+    figure {
+      background-image: url(../img/phone_evening.png);
+    }
+  }
+  &.night {
+    background-image: url(../img/bg_night.jpg);
+    figure {
+      background-image: url(../img/phone_night.png);
+    }
+  }
 }
 
 @media screen and (max-width: 1600px) {

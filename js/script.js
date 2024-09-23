@@ -1,3 +1,4 @@
+const main = document.querySelector("main");
 const numbers = document.querySelectorAll(".screen span");
 const [am, pm] = document.querySelectorAll(".screen em");
 
@@ -24,8 +25,14 @@ function getTime() {
 
 //반환된 시간값을 DOM에 세팅하는 함수
 function setTime(num, index) {
-  //전달받은 첫번째 인수값이 한자리 숫자면 앞에 "0"붙여 출력 그렇지 않으면 그냥 값 출력
   num = num < 10 ? "0" + num : num;
-  //각 span배열에서 두번째 인수로 전달받은 index번째 요소에 위에서 가공한 num값을 출력
   numbers[index].innerText = num;
+}
+
+//시간에 따른 테마 변경 함수
+function changeTheme() {
+  const hr = new Date().getHours();
+
+  if (hr >= 5 && hr < 11) {
+  }
 }
