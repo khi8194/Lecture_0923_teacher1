@@ -17,6 +17,8 @@ function getTime() {
   if (hr >= 13) {
     am.classList.remove("on");
     pm.classList.add("on");
+    //13시가 넘어설때 12를 뺀 값을 다시 hr변수에 재할당
+    hr = hr - 12;
   } else {
     pm.classList.remove("on");
     am.classList.add("on");
@@ -51,3 +53,5 @@ function changeTheme() {
     main.classList.add("night");
   }
 }
+//미션 - 만약 오후 1시가 넘어가면 (13시 이상일때 다시 01로 표기법 변경)
+// 1시 35분까지
