@@ -1,3 +1,5 @@
+//data.js에서 내보낸 themeData를 비구조화할당으로 불러옴
+//모듈타입의 스크립트 파일들에서는 export, import로 데이터값 전달
 import { themeData } from "./data.js";
 const main = document.querySelector("main");
 const numbers = document.querySelectorAll(".screen span");
