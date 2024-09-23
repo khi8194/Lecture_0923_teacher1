@@ -26,7 +26,7 @@ main {
 main article {
   width: 35%;
   position: absolute;
-  top: 40%;
+  top: 57%;
   left: 5%;
 }
 main article p {
@@ -99,6 +99,10 @@ main.night {
 }
 main.night figure {
   background-image: url(../img/phone_night.png);
+}
+main.afternoon figure .screen em,
+main.afternoon figure .screen span {
+  color: #555;
 }
 
 @media screen and (max-width: 1600px) {

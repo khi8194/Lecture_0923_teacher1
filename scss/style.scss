@@ -11,7 +11,7 @@ main {
   article {
     width: 35%;
     position: absolute;
-    top: 40%;
+    top: 57%;
     left: 5%;
 
     p {
@@ -90,6 +90,15 @@ main {
     background-image: url(../img/bg_night.jpg);
     figure {
       background-image: url(../img/phone_night.png);
+    }
+  }
+
+  &.afternoon {
+    figure .screen {
+      em,
+      span {
+        color: #555;
+      }
     }
   }
 }
