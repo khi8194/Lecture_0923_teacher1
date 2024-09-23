@@ -24,7 +24,7 @@ main {
   overflow: hidden;
 }
 main article {
-  width: 37%;
+  width: 35%;
   position: absolute;
   top: 40%;
   left: 5%;
@@ -47,8 +47,9 @@ main figure {
   width: 1200px;
   height: 800px;
   position: absolute;
-  right: -5%;
-  bottom: -5%;
+  right: -10%;
+  top: 50%;
+  margin-top: -200px;
   background: url(../img/phone_morning.png) no-repeat right top/contain;
 }
 main figure .screen {
@@ -63,6 +64,35 @@ main figure .screen {
   gap: 20px;
   font: 60px/1 "orbitron";
   color: #fff;
+}
+
+@media screen and (max-width: 1600px) {
+  main figure {
+    transform-origin: right center;
+    transform: scale(0.8);
+    margin-top: -250px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main article {
+    width: 100%;
+    top: 10%;
+    left: 0px;
+    padding: 10%;
+  }
+  main figure {
+    margin-top: -200px;
+    transform: scale(0.7);
+  }
+}
+@media screen and (max-width: 800px) {
+  main article {
+    top: 0px;
+  }
+  main figure {
+    transform: scale(0.6);
+    right: -20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
